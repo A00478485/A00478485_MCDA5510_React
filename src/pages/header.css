@@ -1,0 +1,33 @@
+.Header {
+    position: relative;
+    min-height: 10vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    align-items: center;
+    background-color: #282c34;
+    color: white;
+}
+
+.Header a {
+    /* float: center; */
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.Header a:hover {
+    background-color: black;
+    color: #ddd;
+}
+
+.Header a.active {
+    background-color:white;
+    color:  dodgerblue;
+}

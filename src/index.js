@@ -1,13 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import App from './App';
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Navigate to="/about" replace />,
+  },
+  {
+    path: "/about",
+    element: <App />
+    //element: <ListPage type='provinces' />,
+  },
+  {
+    path: "/mytown",
+    element: <App />
+    //element: <ListPage type='territories'/>,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+       <RouterProvider router={router} />
   </React.StrictMode>
 );
 
