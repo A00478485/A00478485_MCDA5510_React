@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
+import TemperatureToggle from './TemperatureToggle.js';
 import Headr from './header.js';
 import './mytown.css';
 import hfx from './hfx.jpg';
@@ -11,6 +12,8 @@ function App() {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+
+    var convertedTemperature;
 
     const MY_API_KEY = '03229a999c06443a98058acfed9f3256';
 
@@ -59,19 +62,17 @@ function App() {
     else {
         console.log(data.main);
         temp_c = (data.main.temp - 273.15).toFixed(2);
-        temp_f = (((temp_c - 9)/5) + 32).toFixed(2);
+        // temp_c = 15;
+        temp_f = (((temp_c - 9) / 5) + 32).toFixed(2);
         temp = data.main.temp;
-        
-        if(temp_c < 10)
-        {
+
+        if (temp_c < 10) {
             img_lnk = cold;
         }
-        else if (temp_c < 20)
-        {
+        else if (temp_c < 20) {
             img_lnk = mild;
         }
-        else
-        {
+        else {
             img_lnk = sunny;
         }
 
@@ -94,12 +95,9 @@ function App() {
                     <tbody>
                         <tr>
                             <td>
-                                Weather in Halifax
-                            </td>
-                            <td>
-                                {temp_f} in Fahrenheit
-                                <br />
-                                
+                                <TemperatureToggle temperatureData={temp_c}/>
+                                <br/>
+                                Hint - Click on the text
                             </td>
                             <td>
                                 <img src={img_lnk} alt="Weather Image" />
@@ -110,6 +108,6 @@ function App() {
             </div>
         </div>
     </>);
-}
+};
 
 export default App;
