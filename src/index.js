@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-import App from './App';
+import App from './pages/App';
+import Town from './pages/mytown';
 
 import {
   createBrowserRouter,
@@ -19,12 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <App />
-    //element: <ListPage type='provinces' />,
   },
   {
     path: "/mytown",
-    element: <App />
-    //element: <ListPage type='territories'/>,
+    element: <Town />
   },
 ]);
 

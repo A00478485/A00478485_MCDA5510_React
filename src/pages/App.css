@@ -48,7 +48,6 @@
 .flex-item-left {
   padding: 10px;
   flex: 50%;
-  border-style: double;
 }
 
 .profile-picture {

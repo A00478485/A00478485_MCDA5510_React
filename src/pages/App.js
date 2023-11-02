@@ -1,5 +1,5 @@
 import './App.css';
-import Headr from './pages/header';
+import Headr from './header.js';
 import pp from './pp.jpg';
 
 
