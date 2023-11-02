@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState } from 'react';
 import TemperatureToggle from './TemperatureToggle.js';
 import Headr from './header.js';
 import './mytown.css';
@@ -61,10 +61,10 @@ function App() {
     }
     else {
         console.log(data.main);
+        temp = "Data is loaded from API ..."
         temp_c = (data.main.temp - 273.15).toFixed(2);
         // temp_c = 15;
         temp_f = (((temp_c - 9) / 5) + 32).toFixed(2);
-        temp = data.main.temp;
 
         if (temp_c < 10) {
             img_lnk = cold;
@@ -95,9 +95,10 @@ function App() {
                     <tbody>
                         <tr>
                             <td>
+                                {temp} <br/><br/>
                                 <TemperatureToggle temperatureData={temp_c}/>
                                 <br/>
-                                Hint - Click on the text
+                                Hint - Click on the value
                             </td>
                             <td>
                                 <img src={img_lnk} alt="Weather Image" />

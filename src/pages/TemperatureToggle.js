@@ -12,7 +12,7 @@ const TemperatureToggle = ({ temperatureData }) => {
 
   return (
     <div>
-      <p onClick={handleClick} style={{ cursor: 'pointer' }}>Current Temperature is &nbsp;
+      <p onClick={handleClick} style={{ cursor: 'pointer' }}>Current temperature is &nbsp;
         {isCelsius ? `${temperature}°C` : `${convertedTemperature}°F`}
       </p>
     </div>
