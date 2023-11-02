@@ -12,16 +12,14 @@
   .flex-item-left {
     padding: 10px;
     flex: 50%;
+    text-align: center;
   }
   
   .town-picture {
-    width: 50%; 
-    height: 50%; 
+    width: 300px; 
+    height: 300px; 
     overflow: hidden;
     border: 2px solid #fff; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .town-picture-img {
@@ -34,6 +32,21 @@
     padding: 10px;
     flex: 50%;
     text-align: left;
+  }
+
+  .flex-item-right table
+  {
+    table-layout: auto;
+    border-color: #fff;
+    padding: 10px;
+    border-style: dotted;
+  }
+
+  .flex-item-right table td
+  {
+    table-layout: auto;
+    border-color: #fff;
+    padding: 10px;
   }
   
   @media (max-width: 800px) {

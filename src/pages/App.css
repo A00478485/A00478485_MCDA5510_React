@@ -35,7 +35,7 @@
   color: white;
   align-items: center;
   min-height: 90vh;
-  
+  border-style: dashed;
 }
 
 .flex-item-container {
