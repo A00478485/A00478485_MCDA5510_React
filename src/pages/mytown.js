@@ -13,8 +13,6 @@ function App() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    var convertedTemperature;
-
     const MY_API_KEY = '03229a999c06443a98058acfed9f3256';
 
     const fetchData = async () => {
@@ -101,7 +99,7 @@ function App() {
                                 Hint - Click on the value
                             </td>
                             <td>
-                                <img src={img_lnk} alt="Weather Image" />
+                                <img src={img_lnk} alt="Weather Symbol" />
                             </td>
                         </tr>
                     </tbody>

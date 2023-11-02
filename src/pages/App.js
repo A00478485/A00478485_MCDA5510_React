@@ -25,6 +25,12 @@ function App() {
         <div className="flex-item-right">
           <p>Hello Reader ...</p><br/>
           <p> I'm Bhavy Doshi and pusuing my Master of Science in Computing and Data Analytics at Saint Mary's University located in Halifax, Nova Scotial. I have an overall expirience of 6 years working in IT Industry in India.</p>
+          <br />
+          <p> I joined the MCDA program mainly due to two reasons</p>
+          <ul>
+            <li>This program bridges the gap between theoretical knowledge and industry level practical application</li>
+            <li>Accelerated experiential learning opportunities</li>
+          </ul>
         </div>
       </div>
     </div >
