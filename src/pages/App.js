@@ -10,7 +10,7 @@ function App() {
       <br />
       <br />
       <h1 >
-        Introduction - Bhavy Doshi
+        Introduction - Bhavy Doshi from MAIN branch
       </h1>
       
       <br />
