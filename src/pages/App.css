@@ -29,16 +29,24 @@
 }
 
 .Main {
+  align-items: center;
+  align-self: center;
   text-align: center;
   position: relative;
   background-color: #282c34;
   color: white;
-  align-items: center;
   min-height: 90vh;
   border-style: dashed;
 }
 
 .Main h1
+{
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+.Main h2
 {
   align-items: center;
   align-self: center;

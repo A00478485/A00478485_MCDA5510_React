@@ -10,9 +10,8 @@ function App() {
       <br />
       <br />
       <h1 >
-        Introduction - Bhavy Doshi
+        Introduction - Bhavy Doshi from QA branch
       </h1>
-      
       <br />
       <br />
       <br />
